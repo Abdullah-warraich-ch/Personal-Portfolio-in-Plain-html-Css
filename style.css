@@ -1,0 +1,288 @@
+body {
+  font-family: "Sora", sans-serif;
+}
+
+/* Navigation */
+
+/* .container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  align-items: center;
+  height: 104px;
+}
+.nav-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+}
+
+.download-button {
+}
+.nav-links > ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+li {
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 600;
+}
+*/
+.marginnav {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+.Resumebtn {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 15px 20px;
+  border: 1px solid hidden;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.Resumebtn:hover {
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+}
+.navhover {
+  border-bottom: 1px solid white;
+}
+
+.navhover:hover {
+  border-bottom-color: black;
+}
+
+.Resumebtn > i {
+  margin-left: 0.5rem;
+}
+
+/* Header */
+.intro-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 3fr 1fr;
+  height: 80lvh;
+  margin: 0;
+  padding: 0%;
+  padding-top: 2rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+.heading {
+  grid-area: 1/1/2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.avatar {
+  justify-self: end;
+  /* grid-row: span 2;
+  grid-column: 2/ span 3; */
+  grid-area: 1/2/3/4;
+}
+/* .social {
+} */
+.headingp1 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+.headingp2 {
+  font-size: 12px;
+}
+
+.spanbold {
+  font-weight: bold;
+}
+.outlined {
+  color: rgb(255, 255, 255);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+.socialicon {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0%;
+}
+.sicon {
+  list-style: none;
+}
+.sicon > a {
+  color: #000;
+  border: 1px solid black;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+.sicon > a:hover {
+  color: white;
+  background-color: black;
+}
+.mainpng {
+  height: 450px;
+}
+/* Skills */
+
+#skills {
+  margin-top: 2rem;
+  color: #000;
+  margin-bottom: 3rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.skillscontainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+  gap: 3rem;
+  justify-content: space-between;
+}
+.mskill {
+  width: auto;
+  height: 186px;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: color 0.2s;
+}
+.mskill:hover {
+  color: white;
+  background-color: #000;
+}
+.skilllogo {
+  height: 124px;
+  font-size: 56px;
+  text-align: center;
+  padding: 20px;
+}
+.skillheading > h5 {
+  height: 62px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Education */
+#education {
+  background-color: #000;
+  color: white;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container1div {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(126, 126, 126);
+  border-radius: 5px;
+  padding: 2rem;
+}
+.educardintro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.edulogandname {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+.eduh4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.edup {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+/* Media */
+
+@media only screen and (min-width: 768px) {
+  body {
+  }
+  .mga {
+    margin-left: 3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #skills {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .marginnav {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #education {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .headingp1 {
+    font-size: 36px;
+  }
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+
+  .heading {
+    order: 2;
+  }
+  .avatar {
+    order: 1;
+  }
+  .mainpng {
+    height: 200px;
+    margin-bottom: 3rem;
+  }
+  .social {
+    order: 3;
+  }
+}
+
+@media (max-width: 452px) {
+  .skillscontainer {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  .marginnav {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .mskill {
+    height: 186px;
+  }
+  .mskill:hover {
+    color: white;
+    background-color: #000;
+  }
+  .skilllogo {
+    height: 124px;
+    font-size: 56px;
+  }
+  .skillheading > h5 {
+    height: 62px;
+    font-size: 18px;
+  }
+}
