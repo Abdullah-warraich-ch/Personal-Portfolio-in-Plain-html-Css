@@ -224,12 +224,14 @@ li {
 .aboutcontainer {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .aboutcontent {
   max-width: 500px;
 }
 .aboutavatar > img {
   width: 25rem;
+  margin-bottom: 3rem;
 }
 .aboutParagraph {
   padding-top: 2rem;
@@ -282,6 +284,10 @@ li {
   }
   .social {
     order: 3;
+  }
+  #about {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
