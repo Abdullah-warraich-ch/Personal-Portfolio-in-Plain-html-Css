@@ -237,6 +237,47 @@ li {
   padding-top: 2rem;
   text-align: justify;
 }
+
+/**************************Project Section********************************/
+
+.projects {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 5rem;
+}
+.projectscontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.pdivtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.pdivtext > h2 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.pdivtext > h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.pdivtext > p {
+  color: #757575;
+  font-size: 1rem;
+}
+.pdiv > img {
+  width: 30rem;
+}
+.pdiv {
+  display: flex;
+  align-items: center;
+}
 /* Media */
 
 @media only screen and (min-width: 768px) {
@@ -314,5 +355,9 @@ li {
   .skillheading > h5 {
     height: 62px;
     font-size: 18px;
+  }
+  .projectscontainer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 }
