@@ -280,8 +280,7 @@ li {
 }
 /**************************Testimoneal Section********************************/
 .testimonials {
-  padding:5rem;
-
+  padding: 5rem;
 }
 .testContainer {
   display: grid;
@@ -289,46 +288,113 @@ li {
   grid-template-rows: auto;
   gap: 50px;
 }
-.test{
+.test {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding: 50px ;
+  padding: 50px;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.test>p{
+.test > p {
   text-align: justify;
 }
-.test>i{
+.test > i {
   font-size: 50px;
   border: 2px solid black;
   padding: 20px;
   border-radius: 50%;
 }
-.testblack{
+.testblack {
   background-color: #000;
   color: white;
 }
-.testblack>i{
+.testblack > i {
   border: 2px solid rgb(255, 255, 255);
-
 }
-.testblack>.line{
+.testblack > .line {
   background-color: white;
 }
-.test>p{
+.test > p {
   font-size: smaller;
   color: #757575;
 }
-.testblack>p{
+.testblack > p {
   color: aliceblue;
 }
 .line {
   width: 50%;
   height: 2px;
   background-color: rgb(0, 0, 0);
+}
+/*****************Contact******************/
+.contact {
+  margin: 5rem;
+}
+.contactcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: space-around;
+}
+.contactform {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+}
+input {
+  padding: 10px;
+  border: 1px solid black;
+  width: 100%;
+}
+textarea {
+  padding: 10px;
+  padding-bottom: 50px;
+  border: 1px solid black;
+
+  width: 100%;
+}
+.Submitbtn {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 15px 20px;
+  border: 1px solid hidden;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 25%;
+}
+.contactdetails {
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+/*********************Footer**************************/
+.footer {
+  margin: 0;
+}
+.footerContainer {
+  width: 100%;
+  background-color: #000;
+  height: 100px;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footername {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 3rem;
+}
+.footerdetails {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 3rem;
 }
 /* Media */
 
