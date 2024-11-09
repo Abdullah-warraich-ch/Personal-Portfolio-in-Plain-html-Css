@@ -278,6 +278,58 @@ li {
   display: flex;
   align-items: center;
 }
+/**************************Testimoneal Section********************************/
+.testimonials {
+  padding:5rem;
+
+}
+.testContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 50px;
+}
+.test{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 50px ;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.test>p{
+  text-align: justify;
+}
+.test>i{
+  font-size: 50px;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 50%;
+}
+.testblack{
+  background-color: #000;
+  color: white;
+}
+.testblack>i{
+  border: 2px solid rgb(255, 255, 255);
+
+}
+.testblack>.line{
+  background-color: white;
+}
+.test>p{
+  font-size: smaller;
+  color: #757575;
+}
+.testblack>p{
+  color: aliceblue;
+}
+.line {
+  width: 50%;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+}
 /* Media */
 
 @media only screen and (min-width: 768px) {
